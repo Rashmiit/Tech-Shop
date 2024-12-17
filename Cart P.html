@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Cart Page</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.header-content{
+    
+    display: flex;
+    height: 120px;
+    border: 1px solid;
+    background-color: #141414;
+}
+.icons i{
+    font-size: larger;
+    margin-left: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+} 
+.icons img{
+    font-size: larger;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    filter: invert(100%);
+    width: 30px;
+    height: 25px;
+    color: white;    
+}
+.icons{
+    color:#A9AFC3;
+    margin-top: 15px;
+    margin-left: 80%;
+    display: flex;
+    flex: 7;
+}
+.slider-container{
+    height: 620px;
+    width: 820px;
+    text-align: center;
+    background-color:#15181d50;
+    margin-left: 5%;
+    overflow-y: auto;
+
+}
+.slider-item{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+    
+}
+.slider-img img{
+    width: 175px;
+    height: 150px;
+    margin-top: 15px;
+
+}
+.slider-heading{
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    left: 110px;
+    top: 15px;
+
+}
+
+.slider-heading i{
+    align-items: center;
+    justify-content: end;
+}
+.slider-content{
+    display: grid;
+
+    
+}
+.cart-information{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    height: 700px;
+    background-color:  #141410;
+   
+
+}
+
+.order-summary{
+    width: 400px;
+    height: 400px;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+.order-summary  .sp1{
+    position: relative;
+    left: 70%;
+    font-weight: 100px;
+
+}
+.order-summary  .sp2{
+    position: relative;
+    left: 74%;
+    font-weight: 100px;
+
+}
+.order-summary  .sp3{
+    position: relative;
+    left: 80%;
+    font-weight: 100px;
+}
+.order-summary .sp4{
+    position: relative;
+    left: 23%;
+}
+.logo a{
+    color:#A9AFC3;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 1.4rem;
+    flex: 5;
+    text-decoration: none;
+    position: relative;
+    top: 12%;
+    left: 10%;
+    width: 50px;
+}
+.icons img{
+    font-size: larger;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    filter: invert(100%);
+    width: 30px;
+    height: 25px;
+    color: white;
+
+    
+    
+}
+footer{
+    background-color: 
+    #010101;
+    height: 370px;
+}
+
+.footer-sec{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-evenly;
+    
+   
+} 
+.footer-sec h4{
+    color: #9EA8B6;
+    font-size: larger;
+}
+.footer-sec p{
+    color: #595A63;
+    font-size: smaller;
+}
+.copyright{
+    display: flex;
+    height: 100px;
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    bottom: 20px;
+   
+}
+.copyright p{
+    text-align: left;
+    position: relative;
+    top: 55px;
+    left: 2%;
+    color:  #6A6B6F;
+}
+.copyright i{
+   text-align: end;
+   position: relative;
+   top: 55px;
+   left: 62%;
+   font-size: large;
+   color:#6A6B6F;
+   padding-left: 20px;
+   
+}
+    </style>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <div class="logo">
+            <a href="product.html">Tech-Shop</a>
+        </div>
+        <div class="icons">
+            <img src="D:\frontend\images\search-icon 1.png" alt="">
+            <img src="D:\frontend\images\cart 1.png" alt="">
+            <img src="D:\frontend\images\user-icon 1.png" alt="">
+        </div>
+    </div>
+    </header>
+    <div class="cart-information">
+    <div class="slider-container">
+        <div class="slider-item">
+        <div class="slider-img">
+        <img src="D:\frontend\images\jbl660nc-1.png" alt="">
+        </div>
+        <div class="slider-content">
+        <div class="slider-heading">
+        <h3 style="color: #9DADAE;">JBL LIVE 660NC Wireless Over-ear NC headphones  </h3> <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i style="color:  #AEB0B6; " class="fa-regular fa-trash-can"></i>
+        </div> 
+    <div class="par">
+        <h3 style="color: #B5B7C0; font-size: 25px;">₹9,999 &nbsp; &nbsp; <s style="color: grey;font-size: 20px;">₹14,999</s></h3 ><br>
+    </div>
+    <div class="quantity-selector"  >
+        <button class="qty-btn minus" style="width: 30px;">-</button>
+        <span class="quantity" style="color: red;">1</span>
+        <button class="qty-btn plus"style="width: 30px;">+</button>
+    </div>
+</div>
+    </div> <br>
+    <hr style="color: #595A63;"> 
+    <div class="slider-item">
+        <div class="slider-img">
+        <img src="D:\frontend\images\boat518-1.png" alt="">
+    </div>
+    <div class="slider-content">
+    <div class="slider-heading">
+        <h3 style="color: #9DADAE;">boAt Rockerz 518 On Ear Wireless  headphoness </h3><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i style="color:  #AEB0B6;" class="fa-regular fa-trash-can"></i>
+        </div>
+        <div class="par">
+        <h3 style="color: #B5B7C0;font-size: 25px;" >₹1,299 &nbsp; &nbsp; <s style="color: grey;font-size: 20px;">₹39,990</s></h3><br>
+    </div> 
+    <div class="quantity-selector"  >
+        <button class="qty-btn minus" style="width: 30px;">-</button>
+        <span class="quantity" style="color: red;">1</span>
+        <button class="qty-btn plus"style="width: 30px;">+</button>
+    </div>
+</div>
+    </div><br>
+    <hr style="color: #595A63;">
+    
+    <div class="slider-item">
+        <div class="slider-img">
+        <img src="D:\frontend\images\boat131-1.png" alt="">
+    </div>
+    <div class="slider-content">
+    <div class="slider-heading">
+        <h3 style="color: #9DADAE;">boAt Airdopes 131 Wireless in Ear Earbuds </h3><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i style="color:  #AEB0B6;" class="fa-regular fa-trash-can"></i>
+    </div>
+    
+    <div class="par">
+        <h3 style="color: #B5B7C0;font-size: 25px;">₹1,099 &nbsp; &nbsp;  <s style="color: grey;font-size: 20px;">₹2,990</s></h3><br>
+    </div>
+    <div class="quantity-selector"  >
+        <button class="qty-btn minus" style="width: 30px;">-</button>
+        <span class="quantity" style="color: red;">1</span>
+        <button class="qty-btn plus"style="width: 30px;">+</button>
+    </div>
+</div>
+    </div><br>
+    <hr style="color: #595A63;">
+    <div class="slider-item">
+        <div class="slider-img">
+        <img src="D:\frontend\images\boat110-1.png" alt="">
+    </div>
+    <div class="slider-content">
+    <div class="slider-heading">
+        <h3 style="color: #9DADAE;">boAt Bassheads 110 In Ear Wired Earphones </h3><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i style="color:  #AEB0B6;" class="fa-regular fa-trash-can"></i>
+    </div>
+    
+    <div class="par">
+        <h3 style="color: #B5B7C0;font-size: 25px;">₹499 &nbsp; &nbsp;  <s style="color: grey;font-size: 20px;">₹999</s></h3><br>
+    </div>
+    <div class="quantity-selector" >
+        <button class="qty-btn minus" style="width: 30px;">-</button>
+        <span class="quantity" style="color: red;">1</span>
+        <button class="qty-btn plus"style="width: 30px;">+</button>
+    </div>
+    </div>
+</div>
+    </div>
+    <div class="order-summary">
+        <h2 style="color:   #B4B3C3;">Order Summary (4 items)</h2><br><br>
+        <p style="color:  #B2B2B6; ">Original Price  <span class="sp1" style="text-align: end;">₹22,978</span></p><br><br>
+        <p style="color: #B2B2B6;;">Discount &nbsp;&nbsp;&nbsp; <span class="sp2" style="color: green;text-align: end;">-₹10,132</span></p><br><br>
+
+        <p style="color: #B2B2B6;;">Delivery &nbsp;&nbsp;&nbsp;<span class="sp3" style="color: green;"> Free </span></p><br><br>
+        <hr><br>
+        <h2 style="color: #B4B3C3;" >Total Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sp4" style="text-align: end;">₹12,846</span> </h2><br><br>
+        <button style="width: 420px;height: 50px;color: white; background-color: red;font-size: large;">Checkout</button>
+
+    </div>
+    </div>
+</body>
+<footer>
+    <div class="footer-sec">
+        <div class="1st-sec">
+        <h3 style="color: 
+        #A9B0C4">Tech Shop</h3><br><br>
+        <p>Subscribe to our Email alerts to receive <br>early discount offers,and new products info</p><br>
+        <input type="email" name="" placeholder="Email Address*" style="width: 180px; border:2px solid #595A63;height: 30px;  color: #595A63 ; background-color: black"><br><br>
+        <button style="background-color: red;width: 110px; height: 40px; color: white;">Subscribe</button><br>
+    </div>
+
+    <div class="2nd-sec">
+        <h4>Help</h4><br><br>
+        <ul style="list-style: none; color: #595A63; text-align: left;" >
+            <li>FAQs</li><br>
+            <li>Track order</li><br>
+            <li>Cancel Order</li><br>
+            <li>Return order</li><br>
+            <li>Warranty info</li><br>
+        </ul>
+        </div>
+        <div class="3rd-sec">
+        <h4>Policies</h4><br><br>
+        <ul style="list-style: none; color: #595A63;text-align: left;">
+            <li>Return policy</li><br>
+            <li>Security</li><br>
+            <li>Sitemap</li><br>
+            <li>Privacy Policy</li><br>
+            <li>Terms and conditions</li><br>
+        </ul>
+        </div>
+        <div class="4th-sec">
+        <h4>Company</h4><br><br>
+        <ul style="list-style: none; color: #595A63;text-align: left;">
+            <li>About us</li><br>
+            <li>Contact us</li><br>
+            <li>Service centers</li><br>
+            <li>Carriers</li><br>
+            <li>Affliates</li><br>
+        </ul>
+    </div>
+    </div><br><br>
+    <hr>
+    <div class="copyright">
+        <p >2024|All rights reserved.Build by|RASHMI</p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+</footer>
+</html>
